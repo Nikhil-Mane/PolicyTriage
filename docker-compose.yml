@@ -1,0 +1,14 @@
+services:
+  python-service:
+    build: ./python-service
+    ports:
+      - "8000:8000"
+
+  spring-service:
+    build: ./spring-service
+    ports:
+      - "8080:8080"
+    environment:
+      PYTHON_SERVICE_URL: http://python-service:8000
+    depends_on:
+      - python-service

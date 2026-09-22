@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: support-service
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 25MB
+
+python-service:
+  base-url: ${PYTHON_SERVICE_URL:http://localhost:8000}
+  timeout-ms: 5000
+
+logging:
+  level:
+    com.marlabs.support: INFO

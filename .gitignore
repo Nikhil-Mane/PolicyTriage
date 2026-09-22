@@ -1,0 +1,20 @@
+# Python
+python-service/.venv/
+python-service/__pycache__/
+python-service/**/__pycache__/
+python-service/*.egg-info/
+.pytest_cache/
+
+# Java / Maven
+spring-service/target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Local-only: not part of the assessment's required deliverables
+# (kept on disk for reference, intentionally excluded from the submission)
+/ASSESSMENT_GUIDE.md
+/PLAN.md
+python-service/scripts/
